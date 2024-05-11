@@ -1,0 +1,92 @@
+body {
+  font-family: "Figtree", sans-serif;
+  background-color:  hsl(47, 88%, 63%);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;caret-color: black;
+}
+.blog-card {
+  background-color: white;
+  padding: 20px;
+  width: 384px;
+  border-radius: 20px;
+  border: 1px solid black;
+  box-shadow: 5px 5px 0px black;
+  transition: 0.10s;
+}
+@media (max-width: 375px) {
+  .blog-card {
+    margin: 0 10px;
+    width: 327px;
+  }
+}
+.blog-card:hover {
+  box-shadow: 15px 15px 0px black;
+}
+.blog-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+.blog-card .learning-p {
+  margin: 20px 0 0;
+  background-color: hsl(47, 88%, 63%);
+  width: fit-content;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-weight: 900;
+  font-size: 14px;
+}
+@media (max-width: 375px) {
+  .blog-card .learning-p {
+    padding: 4px 12px;
+  }
+}
+.blog-card .published-p {
+  margin: 12px 0;
+  font-weight: 500;
+  font-size: 14px;
+}
+@media (max-width: 375px) {
+  .blog-card .published-p {
+   font-size: 12px;
+  }
+}
+.blog-card h1 {
+  font-size: 24px;
+  font-weight: 900;
+  margin: 12px 0;
+  cursor: pointer;
+}
+.blog-card h1:hover {
+  color: hsl(47, 88%, 63%);
+}
+@media (max-width: 375px) {
+  .blog-card h1 {
+    font-size: 20px;
+  }
+}
+.blog-card .description-p {
+  font-size: 16px;
+  color: hsl(0, 0%, 50%);
+  margin: 0;
+  line-height: 1.6;
+}
+@media (max-width: 375px) {
+  .blog-card .description-p {
+    font-size: 14px;
+  }
+}
+.blog-card .author {
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.blog-card .author img {
+  width: 32px;
+}
+.blog-card .author span {
+  font-weight: 900;
+  font-size: 14px;
+}
